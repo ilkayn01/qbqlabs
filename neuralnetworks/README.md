@@ -9,6 +9,8 @@ It has 3 units:
 2.   Hidden (Associator Unit)
 3.   Output (Response Unit)
 
+![perc](https://user-images.githubusercontent.com/49631121/157913894-a56222e9-74ea-4c89-be2a-ab031bb0a3b7.png)
+
 Pointers:
 
 * Weight updation between hidden and output layer
