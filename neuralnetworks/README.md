@@ -35,9 +35,7 @@ Step 5: Make adjustments in weights and bias
 > b (new) = b(old) + αt
 
 where α = learning rate;
-
       t = target (1 or -1);
-      
       b = bias
 
 Step 6: Check for stopping condition. If there is no change in weights, stop the training process.
