@@ -41,3 +41,7 @@ where α = learning rate;
       b = bias
 
 Step 6: Check for stopping condition. If True (i.e, no change in weights), stop the training process.
+
+# Limitations
+
+* Can only deal with linearly separable problems
