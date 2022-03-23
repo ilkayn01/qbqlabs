@@ -22,9 +22,9 @@ Pointers:
 
 Step 0: initialize weights, bias, learning rate (between 0 and 1)
 
-Step 1: Check for stopping condition
+Step 1: Check for stopping condition, if False: perform steps 2-6 
 
-Step 2: Perform steps 3-5 for binary training vector s:t
+Step 2: Perform steps 3-5 for binary training vector
 
 Step 3: Apply activation function to input layer
 
@@ -40,4 +40,4 @@ where α = learning rate;
       t = target (1 or -1);
       b = bias
 
-Step 6: Check for stopping condition. If there is no change in weights, stop the training process.
+Step 6: Check for stopping condition. If True (i.e, no change in weights), stop the training process.
