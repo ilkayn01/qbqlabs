@@ -10,7 +10,7 @@ It has 3 units:
 3.   Output (Response Unit)
 
 
-![perc](https://user-images.githubusercontent.com/49631121/166867623-d8ac56da-18cd-4ab4-b1ec-5d1154c19629.png)
+![perc](https://user-images.githubusercontent.com/49631121/166867692-81eccfed-ff12-4b3d-b048-20dae7a78ae5.png)
 
 
 Pointers:
