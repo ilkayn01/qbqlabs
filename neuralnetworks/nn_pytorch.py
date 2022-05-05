@@ -18,6 +18,9 @@ def arr_tensor(x):
 def training(X_train, X_test, Y_train, Y_test, epochs, alpha):
   X_train = arr_tensor(X_train)
   Y_train = arr_tensor(Y_train)
+  
+  X_test = arr_tensor(X_test)
+  Y_test = arr_tensor(Y_test)
 
   td = torch.utils.data.TensorDataset(X_train, Y_train)
 
