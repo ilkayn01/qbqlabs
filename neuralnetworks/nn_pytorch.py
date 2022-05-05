@@ -17,4 +17,8 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, stratify = Y, random_s
 
 X_train = torch.tensor(np.array(X_train), dtype=torch.float)                                #converting train sets to numpy arrays to tensor
 Y_train = torch.tensor(np.array(Y_train), dtype = torch.float)
-data_tf = torch.utils.data.TensorDataset(X_train, Y_train)
+td = torch.utils.data.TensorDataset(X_train, Y_train)
+
+classifier = nn.Sequential(nn.Linear(in_features=30, out_features=15), nn.ReLU(), nn.Linear(15, 15), nn.ReLU(), nn.Linear(15, 1), nn.Sigmoid())
+criterion = nn.BCELoss()
+optimizer = torch.optim.Adam(classifier.parameters(), lr=0.006, weight_decay=0.0006)
