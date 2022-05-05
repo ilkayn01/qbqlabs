@@ -9,7 +9,9 @@ It has 3 units:
 2.   Hidden (Associator Unit)
 3.   Output (Response Unit)
 
-![perc](https://user-images.githubusercontent.com/49631121/166867512-3e0b6962-af0e-4ba3-9cc2-30ac996a43ae.png)
+
+![perc](https://user-images.githubusercontent.com/49631121/166867623-d8ac56da-18cd-4ab4-b1ec-5d1154c19629.png)
+
 
 Pointers:
 
