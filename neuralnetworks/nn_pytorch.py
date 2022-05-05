@@ -27,4 +27,13 @@ def training(X_train, X_test, Y_train, Y_test, epochs, alpha):
   classifier = nn.Sequential(nn.Linear(in_features=30, out_features=15), nn.ReLU(), nn.Linear(15, 15), nn.ReLU(), nn.Linear(15, 1), nn.Sigmoid())
   criterion = nn.BCELoss()
   optimizer = torch.optim.Adam(classifier.parameters(), lr=alpha, weight_decay=0.0006)
-  return
+  return testing(X_test, Y_test, classifier)
+
+def testing(X_test, Y_test, classifier):
+
+  X_test = arr_tensor(X_test)
+  Y_test = arr_tensor(Y_test)
+
+  X = classifier.forward(X_test)
+  accuracy = accuracy_score(Y_test, X)*100
+  return accuracy
