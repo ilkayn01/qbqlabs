@@ -14,9 +14,13 @@ X = data.iloc[:,:-1]
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, stratify = Y, random_state=42)
 
+def arr_tensor(x):
+  x = torch.tensor(np.array(x), dtype=torch.float)                                #converting train sets to numpy arrays to tensor
+  return x
 
-X_train = torch.tensor(np.array(X_train), dtype=torch.float)                                #converting train sets to numpy arrays to tensor
-Y_train = torch.tensor(np.array(Y_train), dtype = torch.float)
+X_train = arr_tensor(X_train)
+Y_train = arr_tensor(Y_train)
+
 td = torch.utils.data.TensorDataset(X_train, Y_train)
 
 classifier = nn.Sequential(nn.Linear(in_features=30, out_features=15), nn.ReLU(), nn.Linear(15, 15), nn.ReLU(), nn.Linear(15, 1), nn.Sigmoid())
